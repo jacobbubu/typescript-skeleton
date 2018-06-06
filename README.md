@@ -4,7 +4,7 @@
 ## Usage
 
 ```
-git clone https://github.com/jacobbubu/typescript-skeleton quick-ts
+git clone https://github.com/jacobbubu/typescript-skeleton.git quick-ts
 ```
 
 then create a alias in your shell `.rc`, for example: `.bashrc`.
