@@ -23,8 +23,8 @@ sed -i "" "s/{{NAME}}/$PROJECT_NAME/" "$PROJECT/README.md"
 
 cp "$BASEDIR/newts_assets/tsconfig.json" "$PROJECT"
 cp "$BASEDIR/newts_assets/tslint.json" "$PROJECT"
-cp "$BASEDIR/newts_assets/gitignore" "$PROJECT"
-cp "$BASEDIR/newts_assets/editorconfig" "$PROJECT"
+cp "$BASEDIR/newts_assets/gitignore" "$PROJECT/.gitignore"
+cp "$BASEDIR/newts_assets/editorconfig" "$PROJECT/.editorconfig"
 cp "$BASEDIR/newts_assets/travis.yml" "$PROJECT"
 cp "$BASEDIR/newts_assets/test/index.test.ts" "$PROJECT/test"
 
