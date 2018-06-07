@@ -24,6 +24,13 @@
     "precommit": "lint-staged",
     "dev": "ts-node-dev --respawn --type-check src/index.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit",
+      "pre-push": "npm run prepush",
+      "commit-msg": "npm run commitmsg"
+    }
+  },
   "lint-staged": {
     "{src,test}/**/*.ts": ["prettier --write", "git add"]
   },
