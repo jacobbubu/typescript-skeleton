@@ -1,7 +1,7 @@
-import m from "../src";
+import * as m from "../src";
 
 describe("suite 1", () => {
-  it("case1", () => {
-    expect(m).toBeTruthy();
+  it("name", () => {
+    expect(m.name).toBe('jacobbubu');
   });
 });
