@@ -11,6 +11,7 @@ mkdir -p src
 mkdir -p dist
 mkdir -p types
 mkdir -p test
+mkdir -p tools
 
 # Copy package.json and fill the template string
 cp "$BASEDIR/newts_assets/ts.package.json" "$PROJECT/package.json"
@@ -27,6 +28,7 @@ cp "$BASEDIR/newts_assets/gitignore" "$PROJECT/.gitignore"
 cp "$BASEDIR/newts_assets/editorconfig" "$PROJECT/.editorconfig"
 cp "$BASEDIR/newts_assets/travis.yml" "$PROJECT"
 cp "$BASEDIR/newts_assets/test/index.test.ts" "$PROJECT/test"
+cp "$BASEDIR/newts_assets/tools/semantic-release-prepare.ts" "$PROJECT/tools"
 
 # Install modules
 npm i typescript @types/node ts-node-dev \
@@ -34,7 +36,7 @@ tslint tslint-config-prettier tslint-config-standard \
 jest @types/jest ts-jest \
 husky commitizen cz-conventional-changelog lint-staged \
 semantic-release validate-commit-msg coveralls \
-rimraf prettier -D
+rimraf prettier chalk -D
 
 # Export new created fodler name to caller
 echo $PROJECT_NAME

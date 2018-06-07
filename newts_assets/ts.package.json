@@ -4,7 +4,10 @@
   "description": "TBD",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
-  "repository": "https://github.com/NXMIX/{{NAME}}.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NXMIX/{{NAME}}.git"
+  },
   "files": ["dist"],
   "author": "jacobbubu <rong.shen@gmail.com>",
   "scripts": {
@@ -17,7 +20,7 @@
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
+    "semantic-release-prepare": "ts-node-dev tools/semantic-release-prepare",
     "precommit": "lint-staged",
     "dev": "ts-node-dev --respawn --type-check src/index.ts"
   },
