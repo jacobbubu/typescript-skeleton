@@ -26,7 +26,7 @@ cp "$BASEDIR/newts_assets/tsconfig.json" "$PROJECT"
 cp "$BASEDIR/newts_assets/tslint.json" "$PROJECT"
 cp "$BASEDIR/newts_assets/gitignore" "$PROJECT/.gitignore"
 cp "$BASEDIR/newts_assets/editorconfig" "$PROJECT/.editorconfig"
-cp "$BASEDIR/newts_assets/travis.yml" "$PROJECT"
+cp "$BASEDIR/newts_assets/travis.yml" "$PROJECT/.travis.yml"
 cp "$BASEDIR/newts_assets/test/index.test.ts" "$PROJECT/test"
 cp "$BASEDIR/newts_assets/tools/semantic-release-prepare.ts" "$PROJECT/tools"
 
