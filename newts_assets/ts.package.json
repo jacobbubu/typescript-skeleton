@@ -53,7 +53,9 @@
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "moduleFileExtensions": ["ts", "tsx", "js"],
     "coveragePathIgnorePatterns": [
-      "emoji-sequences",
+      "/coverage/",
+      "/dist/",
+      "/tools/",
       "/node_modules/",
       "/test/"
     ],
