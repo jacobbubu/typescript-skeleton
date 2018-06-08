@@ -2,7 +2,7 @@ const path = require("path")
 const { fork } = require("child_process")
 const chalk = require("chalk")
 
-const { readFileSync, writeFileSync } = require("fs")
+const { readFileSync } = require("fs")
 const pkg = JSON.parse(
   readFileSync(path.resolve(__dirname, "..", "package.json"))
 )
